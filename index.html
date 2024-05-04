@@ -1,34 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="calculator">
+      <header>
         <h2>Simple JavaScript Calculator</h2>
-        <input type="text" id="input" disabled><br>
-        <button onclick="clearInput()">C</button>
-        <button onclick="appendToInput('7')">7</button>
-        <button onclick="appendToInput('8')">8</button>
-        <button onclick="appendToInput('9')">9</button>
-        <button onclick="appendToInput('+')">+</button><br>
-        <button onclick="appendToInput('4')">4</button>
-        <button onclick="appendToInput('5')">5</button>
-        <button onclick="appendToInput('6')">6</button>
-        <button onclick="appendToInput('-')">-</button><br>
-        <button onclick="appendToInput('1')">1</button>
-        <button onclick="appendToInput('2')">2</button>
-        <button onclick="appendToInput('3')">3</button>
-        <button onclick="appendToInput('*')">*</button><br>
-        <button onclick="appendToInput('0')">0</button>
-        <button onclick="appendToInput('.')">.</button>
-        <button onclick="calculate()">=</button>
-        <button onclick="appendToInput('/')">/</button><br>
+        <input type="text" id="input" placeholder="0" disabled /><br />
+      </header>
+
+      <div class="parent">
+        <div class="div1 border"></div>
+        <div class="div2 border"></div>
+        <div class="div3 border"><button onclick="clearInput()">C</button></div>
+        <div class="div4 border">
+          <button onclick="appendToInput('/')">/</button><br />
+        </div>
+        <div class="div5 border">
+          <button onclick="appendToInput('7')">7</button>
+        </div>
+        <div class="div6 border">
+          <button onclick="appendToInput('8')">8</button>
+        </div>
+        <div class="div7 border">
+          <button onclick="appendToInput('9')">9</button>
+        </div>
+        <div class="div8 border">
+          <button onclick="appendToInput('*')">*</button><br />
+        </div>
+        <div class="div9 border">
+          <button onclick="appendToInput('4')">4</button>
+        </div>
+        <div class="div10 border">
+          <button onclick="appendToInput('5')">5</button>
+        </div>
+        <div class="div11 border">
+          <button onclick="appendToInput('6')">6</button>
+        </div>
+        <div class="div12 border">
+          <button onclick="appendToInput('-')">-</button><br />
+        </div>
+        <div class="div13 border">
+          <button onclick="appendToInput('1')">1</button>
+        </div>
+        <div class="div14 border">
+          <button onclick="appendToInput('2')">2</button>
+        </div>
+        <div class="div15 border">
+          <button onclick="appendToInput('3')">3</button>
+        </div>
+        <div class="div16 border">
+          <button onclick="appendToInput('+')">+</button><br />
+        </div>
+        <div class="div17 border"></div>
+        <div class="div18 border">
+          <button onclick="appendToInput('0')">0</button>
+        </div>
+        <div class="div19 border">
+          <button onclick="appendToInput('.')">.</button>
+        </div>
+        <div class="div20 border"><button onclick="calculate()">=</button></div>
+      </div>
     </div>
-    
+
     <script src="main.js"></script>
-</body> 
+  </body>
 </html>
