@@ -1,3 +1,17 @@
+const toggleBtn = document.getElementById('toggle-btn');
+const body = document.body;
+
+toggleBtn.addEventListener('click', () => {
+    body.classList.toggle('night-mode');
+    localStorage.setItem('nightMode', body.classList.contains('night-mode'));
+});
+
+// Check night mode status on page load
+const nightMode = localStorage.getItem('nightMode');
+if (nightMode === 'true') {
+    body.classList.add('night-mode');
+}
+
 function appendToInput(value) {
   document.getElementById("input").value += value;
 }
@@ -11,3 +25,4 @@ function calculate() {
   var result = eval(input);
   document.getElementById("input").value = result;
 }
+

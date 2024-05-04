@@ -6,14 +6,19 @@
     padding: 0;
     margin: 0;
 }
-body{
-    font-family: poppins;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #202020;
-}
+    body{
+        font-family: poppins;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #202020;
+        transition: background-color 0.3s ease;
+    }
+
+    .night-mode {
+        background-color: #fff;
+    }
 
 header h2{
     font-weight: 600;
