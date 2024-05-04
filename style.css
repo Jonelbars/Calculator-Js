@@ -37,6 +37,11 @@ button{
     border: none;
 }
 
+button:hover{
+    cursor: pointer;
+    background-color: #323232;
+}
+
 .calculator{
     display: flex;
     flex-direction: column;
