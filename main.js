@@ -2,14 +2,14 @@ const toggleBtn = document.getElementById('toggle-btn');
 const body = document.body;
 
 toggleBtn.addEventListener('click', () => {
-    body.classList.toggle('night-mode');
-    localStorage.setItem('nightMode', body.classList.contains('night-mode'));
+    body.classList.toggle('light-mode');
+    localStorage.setItem('nightMode', body.classList.contains('light-mode'));
 });
 
 // Check night mode status on page load
 const nightMode = localStorage.getItem('nightMode');
 if (nightMode === 'true') {
-    body.classList.add('night-mode');
+    body.classList.add('light-mode');
 }
 
 function appendToInput(value) {
