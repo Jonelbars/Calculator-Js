@@ -57,7 +57,12 @@ input {
   
   span {
     display: inline-block;
+  }
 
+  img{
+    color: #fff;
+    height: 30px;
+    width: 30px;
   }
   
   .mode::before {
