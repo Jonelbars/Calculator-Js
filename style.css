@@ -42,6 +42,47 @@ input {
   font-size: 16px;
 }
 
+.mode {
+    background: #3b3b3b;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    width: 120px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+  }
+  
+  span {
+    display: inline-block;
+
+  }
+  
+  .mode::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: #323232;
+    opacity: 0;
+    z-index: -1;
+    transition: all 1s;
+  }
+  
+  .mode:hover {
+    color: #fff;
+  }
+  
+  .mode:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+
 button {
   width: 100%;
   height: 100%;
